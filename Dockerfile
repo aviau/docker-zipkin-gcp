@@ -17,7 +17,7 @@ FROM alpine
 WORKDIR /zipkin-gcp
 
 ENV ZIPKIN_GCP_REPO https://jcenter.bintray.com
-ENV ZIPKIN_GCP_VERSION 0.13.2
+ENV ZIPKIN_GCP_VERSION 0.13.3
 
 RUN apk add curl unzip && \
   curl -SL $ZIPKIN_GCP_REPO/io/zipkin/gcp/zipkin-autoconfigure-storage-stackdriver/$ZIPKIN_GCP_VERSION/zipkin-autoconfigure-storage-stackdriver-$ZIPKIN_GCP_VERSION-module.jar > stackdriver.jar && \
